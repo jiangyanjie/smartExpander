@@ -2,9 +2,9 @@ What smartExpander does?
 
 smartExpander is a tool for suggesting whether abbreviations are used properly, i.e., whether they should be replaced with corresponding full terms. 
 
-How to obtain BugBuilder?
+How to obtain smartExpander?
 
-BugBuilder can be obtained from https://github.com/jiangyanjie/smartExpander (This repository is permanently stored and available).
+smartExpander can be obtained from https://github.com/jiangyanjie/smartExpander (This repository is permanently stored and available).
 
 How to get started?
 
