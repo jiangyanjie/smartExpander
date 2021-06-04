@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<content>ParseCode</content>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<content>org.eclipse.jdt.core.javabuilder</content>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<content>org.eclipse.pde.ManifestBuilder</content>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<content>org.eclipse.pde.SchemaBuilder</content>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.pde.PluginNature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+</projectDescription>

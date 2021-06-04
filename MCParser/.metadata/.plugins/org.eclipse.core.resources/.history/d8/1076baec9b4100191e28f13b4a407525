@@ -1,0 +1,39 @@
+package util;
+
+import java.io.File;
+import java.io.IOException;
+import java.net.URL;
+
+import edu.mit.jwi.Dictionary;
+import edu.mit.jwi.IDictionary;
+import edu.mit.jwi.morph.WordnetStemmer;
+
+public class Config {
+	public static String outFile = "D:/RecomMethodName/ParseResult/MethodComment.tsv";
+    public static String englishDicFile = "dic/EnglishDic.txt";
+    private static String wordnetPath = "wordnet" + File.separator + "dict";   
+    public static IDictionary dict;
+    public static WordnetStemmer stemmer;
+	static {
+		File f=new File(Config.outFile);
+		if(f.exists()) {
+             f.delete();
+		} else {
+			try {
+				f.createNewFile();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+
+		try {
+			URL url = new URL("file", null, wordnetPath);
+		    dict = new Dictionary(url);    
+		    dict.open(); 
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}   
+		stemmer = new WordnetStemmer(dict);
+	}
+}

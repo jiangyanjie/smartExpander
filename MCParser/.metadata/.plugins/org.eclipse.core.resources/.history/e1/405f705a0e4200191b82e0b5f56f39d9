@@ -1,0 +1,113 @@
+package entity;
+
+import java.util.ArrayList;
+
+public class MyComment {
+	private int startLine;
+	private int endLine;
+	private String type;
+	private String content;
+	
+	public MyComment(int startLine, int endLine, String content, String type) {
+		this.startLine = startLine;
+		this.endLine = endLine;
+		this.content = content;
+		this.type = type;
+	}
+
+	@Override
+	public String toString() {
+		String result = contentToString();
+		result = result.replaceAll("\n", ". ");
+		result = result.replaceAll("\t", " ");
+		while (result.contains("  ")) {
+			result = result.replaceAll("  ", " ");
+		}
+		while (result.contains("..")) {
+			result = result.replaceAll("..", ".");
+		}
+		return result;
+	}
+	
+	public String contentToString() {
+		if (type.equals("Javadoc")) {
+			return javadocToString(content);
+		} else if (type.equals("LineComment")) {
+			return lineCommentToString(content);
+		} else if (type.equals("BlockComment")) {
+			return blockCommentToString(content);
+		} else {
+			return "";
+		}
+	}
+	
+	private static String javadocToString(String javadoc) {
+		String[] lines = javadoc.split("\n");
+		
+		ArrayList<String> result = new ArrayList<>();
+		for (int i = 0; i < lines.length; i++) {
+			lines[i] = removeSlashStar(lines[i]);
+			if (lines[i].contains("@") || lines[i].equals("")) {
+				continue;
+			} else {
+				result.add(lines[i]);
+			}
+		}
+		if (result.size() != 1) {
+			return "";
+		}
+		if (isLargerOneTimeContains(result.get(0), ".")) {
+			return "";
+		}
+		return result.get(0);
+	}
+	
+	private static String lineCommentToString(String lineComment) {
+		String result = removeSlashStar(lineComment);
+		if (isLargerOneTimeContains(result, ".")) {
+			return "";
+		}
+		return result;
+	}
+	
+	private static String blockCommentToString(String blockComment) {
+		return javadocToString(blockComment);
+	}
+
+	private static boolean isLargerOneTimeContains(String str, String seq) {
+		return str.indexOf(seq) != str.lastIndexOf(seq);
+	}
+	
+	private static String removeSlashStar(String str) {
+		String result = "";
+		char[] chars = str.trim().toCharArray();
+		int startPosition = chars.length;
+		for (int i = 0; i < chars.length; i++) {
+			if (chars[i] == '/' || chars[i] == '*') {
+				
+			} else {
+				startPosition = i;
+				break;
+			}
+		}
+		for (int i = startPosition; i < chars.length; i++) {
+			result += chars[i];
+		}
+		return result.trim();
+	}
+	
+	public int getEndLine() {
+		return endLine;
+	}
+
+	public static void main(String[] args) {
+		String[] temps = {};
+		System.out.println(String.join("-", temps).length());
+		
+		System.out.println("3".contains("."));
+		System.out.println(isLargerOneTimeContains("1212.31231.23123", "."));
+		System.out.println("1212.31231.23123".lastIndexOf("."));
+	}
+	
+	
+}

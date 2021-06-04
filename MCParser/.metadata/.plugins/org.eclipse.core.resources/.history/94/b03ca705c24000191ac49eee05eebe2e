@@ -1,0 +1,25 @@
+package entity;
+
+public class MyMethod {
+	private int line;
+	private String content;
+
+	public MyMethod(int line, String content) {
+		super();
+		this.line = line;
+		this.content = content;
+	}
+
+	public int getLine() {
+		return line;
+	}
+
+	public void setLine(int line) {
+		this.line = line;
+	}
+
+	@Override
+	public String toString() {
+		return getLine() + "\t" + content;
+	}
+}

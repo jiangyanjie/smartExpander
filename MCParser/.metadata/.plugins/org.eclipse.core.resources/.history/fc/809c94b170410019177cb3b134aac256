@@ -1,0 +1,18 @@
+package huyamin.main;
+
+import java.io.IOException;
+
+import edu.mit.jwi.item.IIndexWord;
+import edu.mit.jwi.item.IWord;
+import edu.mit.jwi.item.IWordID;
+import edu.mit.jwi.item.POS;
+import util.Config; 
+
+public class  HiWordnet {  
+  public static void main(String[] args) throws IOException  { 
+	  for (POS p : POS.values()) {
+		  System.err.println(p);
+			
+	  }     
+  }
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<contributor content="org.eclipse.pde"/>
+<contributor content="org.eclipse.pde.ui"/>
+<contributor content="org.eclipse.platform"/>
+<contributor content="org.eclipse.m2e.core.ui"/>
+<contributor content="org.eclipse.ui.intro"/>
+<contributor content="org.eclipse.jdt"/>
+<contributor content="org.eclipse.cvs"/>
+<contributor content="org.eclipse.ui.intro.universal"/>
+</root>

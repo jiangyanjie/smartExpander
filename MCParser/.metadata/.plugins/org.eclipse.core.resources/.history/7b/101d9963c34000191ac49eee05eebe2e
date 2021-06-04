@@ -1,0 +1,21 @@
+package util;
+
+import java.io.File;
+import java.io.IOException;
+
+public class Config {
+	public static String outFile = "D:/RecomMethodName/ParseResult";
+	
+	static {
+		File f=new File(Config.outFile);
+		if(f.exists()) {
+             f.delete();
+		} else {
+			try {
+				f.createNewFile();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+}

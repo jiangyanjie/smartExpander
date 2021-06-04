@@ -1,0 +1,37 @@
+package util;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.HashSet;
+
+public class Dic {
+    public static HashSet<String> englishDicHashSet = new HashSet<String>();
+    
+    static {
+        // init english dic
+        try {
+        	FileReader fileReader = new FileReader(GlobleVariable.englishDicFile);
+            BufferedReader bufferedReader = new BufferedReader(fileReader);
+            String temp;
+            while ((temp = bufferedReader.readLine()) != null) {
+                // convert to lower case
+                englishDicHashSet.add(temp.toLowerCase());
+            }
+            bufferedReader.close();
+            fileReader.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static boolean isInDict(String str){
+        if (str.length() == 1) {
+            return false;
+        }
+        if (englishDicHashSet.contains(str.toLowerCase())) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}

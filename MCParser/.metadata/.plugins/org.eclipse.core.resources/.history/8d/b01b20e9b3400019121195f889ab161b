@@ -1,0 +1,47 @@
+package visitor;
+
+import java.util.ArrayList;
+
+import org.eclipse.jdt.core.dom.ASTVisitor;
+import org.eclipse.jdt.core.dom.CompilationUnit;
+import org.eclipse.jdt.core.dom.Javadoc;
+import org.eclipse.jdt.core.dom.MethodDeclaration;
+
+import entity.MyMethod;
+
+public class MyMethodVisitor extends ASTVisitor {
+	CompilationUnit compilationUnit;
+
+	public ArrayList<MyMethod> methods = new ArrayList<>();
+	
+	public MyMethodVisitor(CompilationUnit compilationUnit) {
+        super();
+        this.compilationUnit = compilationUnit;
+    }
+	
+    @Override
+	public boolean visit(MethodDeclaration node) {
+		MyMethod method = getMethodDeclarationInfo(node, compilationUnit);
+		if (node.isConstructor()) {
+			return super.visit(node);
+		}
+		methods.add(method);
+		return super.visit(node);
+	}
+
+	public static MyMethod getMethodDeclarationInfo(MethodDeclaration node, CompilationUnit compilationUnit) {
+		// method content
+		String content = node.getName().toString();
+		// get line number
+		Javadoc javaDoc = node.getJavadoc();
+		int line;
+		if (javaDoc == null) {
+			line = compilationUnit.getLineNumber(node.getStartPosition());
+		} else {
+			line = compilationUnit.getLineNumber(node.getStartPosition()+javaDoc.getLength())+1;
+		}
+
+		MyMethod method = new MyMethod(line, content);
+		return method;
+	}
+}

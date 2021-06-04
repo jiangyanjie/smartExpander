@@ -1,0 +1,25 @@
+package entity;
+
+public class MethodCommentPair {
+	private String path;
+	private MyMethod method;
+	private MyComment comment;
+	public MethodCommentPair(String path, MyMethod method, MyComment comment) {
+		super();
+		this.path = path;
+		this.method = method;
+		this.comment = comment;
+	}
+	@Override
+	public String toString() {
+		return path + "\t" + method + "\t" + comment;
+	}
+	public MyMethod getMethod() {
+		return method;
+	}
+	public MyComment getComment() {
+		return comment;
+	}
+	
+	
+}

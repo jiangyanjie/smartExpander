@@ -1,0 +1,29 @@
+package huyamin.main;
+
+import java.io.IOException;
+import java.util.List;
+
+import edu.mit.jwi.item.IIndexWord;
+import edu.mit.jwi.item.IWord;
+import edu.mit.jwi.item.IWordID;
+import edu.mit.jwi.item.POS;
+import util.Config;
+
+public class HiWordnet {
+	public static void main(String[] args) throws IOException  { 
+		
+			List<String> lstStem=Config.stemmer.findStems("dogs", POS.NOUN);
+			for (String string : lstStem) {
+				for (POS p : POS.values()) {
+					IIndexWord idxWord = Config.dict.getIndexWord(string, p);
+					if (idxWord == null)
+						continue;
+					IWordID wordID =  (IWordID)idxWord.getWordIDs().get(0);   
+					IWord word =  Config.dict.getWord(wordID);   
+					System.out.println("Id = " + wordID);    
+					System.out.println("Lemma = " + word.getLemma()); 
+				} 
+			}
+	
+	}
+}

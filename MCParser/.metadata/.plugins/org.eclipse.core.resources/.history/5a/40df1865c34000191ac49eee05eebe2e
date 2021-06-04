@@ -1,0 +1,5 @@
+package util;
+
+public class GlobleVariable {
+    public static String englishDicFile = "dic/EnglishDic.txt";
+}

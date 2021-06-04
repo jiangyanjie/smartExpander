@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<!--
+    Copyright (c) 2005, 2010 IBM Corporation and others.
+    All rights reserved. This program and the accompanying materials
+    are made available under the terms of the Eclipse Public License v1.0
+    which accompanies this distribution, and is available at
+    http://www.eclipse.org/legal/epl-v10.html
+   
+    Contributors:
+         IBM Corporation - initial API and implementation
+ -->
+
+<plugin>
+
+    
+<!-- ========== Extension Points ================= -->
+<!-- =============================================================================== -->
+<!-- Extension point: org.eclipse.ui.intro.config                                    -->
+<!-- Extension-point for contributing a configuration to a Customizable Intro Part.  -->
+<!--                                                                                 -->
+<!-- =============================================================================== -->
+<!-- ================================================================================= -->
+<!-- Extension point: org.eclipse.ui.intro.configExtension                             -->
+<!-- Extension-point for contributing an extension to an existing intro configuration  -->
+<!--                                                                                   -->
+<!-- ================================================================================= -->
+   
+   <extension
+         point="org.eclipse.ui.intro">
+      <intro
+            class="org.eclipse.ui.intro.config.CustomizableIntroPart"
+            contentDetector="org.eclipse.ui.internal.intro.universal.contentdetect.ContentDetector"
+            icon="$nl$/icons/welcome16.gif"
+            id="org.eclipse.ui.intro.universal"/>
+   </extension>
+   <extension
+         point="org.eclipse.ui.intro.config">
+      <config
+            configurer="org.eclipse.ui.internal.intro.universal.UniversalIntroConfigurer"
+            content="$nl$/introContent.xml"
+            id="org.eclipse.ui.intro.universalConfig"
+            introId="org.eclipse.ui.intro.universal">
+         <presentation
+               home-page-id="root" standby-page-id="standby">
+            <implementation
+                  style="themes/shared/html/shared.css,$theme$/html/shared.css,$theme$/html/font-$fontStyle$.css,$theme$/html/$direction$.css"
+                  kind="html"
+                  os="win32,linux,macosx,solaris">
+            </implementation>
+            <implementation
+                  kind="swt">
+            </implementation>
+            <launchBar
+               	location="fastview" 
+            	bg="$launchbarBackground$"
+            	computed="true">
+            </launchBar>
+         </presentation>
+      </config>
+   </extension>
+   <extension
+         point="org.eclipse.ui.intro.configExtension">
+      <theme
+            id="org.eclipse.ui.intro.universal.circles"
+            content="%theme.content.circles"
+            path="$nl$/themes/circles"
+            previewImage="$nl$/themes/circles/preview.png"
+            scalable="true">
+            <property content="workbenchAsRootLink"
+            		value="true"/>
+            		<!--
+            <property content="launchbarBackground"
+            		value="#a1c2cb"/>
+            		-->
+            <property content="launchbarOverviewIcon"
+            		  value="$theme$graphics/launchbar/overview16.png"/>
+            <property content="launchbarFirststepsIcon"
+            		  value="$theme$graphics/launchbar/firststeps16.png"/>
+            <property content="launchbarTutorialsIcon"
+            		  value="$theme$graphics/launchbar/tutorials16.png"/>
+            <property content="launchbarSamplesIcon"
+            		  value="$theme$graphics/launchbar/samples16.png"/>
+            <property content="launchbarWhatsnewIcon"
+            		  value="$theme$graphics/launchbar/whatsnew16.png"/>
+            <property content="launchbarMigrateIcon"
+            		  value="$theme$graphics/launchbar/migrate16.png"/>
+            <property content="launchbarWebresourcesIcon"
+            		  value="$theme$graphics/launchbar/webresources16.png"/>
+
+            <property content="highContrast-overview"
+            		  value="$theme$graphics/icons/ctool/overview.png"/>
+            <property content="highContrast-firststeps"
+            		  value="$theme$graphics/icons/ctool/firststeps.png"/>
+            <property content="highContrast-tutorials"
+            		  value="$theme$graphics/icons/ctool/tutorials.png"/>
+            <property content="highContrast-samples"
+            		  value="$theme$graphics/icons/ctool/samples.png"/>
+            <property content="highContrast-whatsnew"
+            		  value="$theme$graphics/icons/ctool/whatsnew.png"/>
+            <property content="highContrast-webresources"
+            		  value="$theme$graphics/icons/ctool/webresources.png"/>
+            <property content="highContrast-migrate"
+            		  value="$theme$graphics/icons/ctool/migrate.png"/>    
+            <property content="highContrast-workbench"
+            		  value="$theme$graphics/icons/ctool/workbench.png"/>    
+            		  
+            <property content="highContrastNav-overview"
+            		  value="$theme$graphics/icons/ctool/ov_nav.png"/>
+            <property content="highContrastNav-firststeps"
+            		  value="$theme$graphics/icons/ctool/fs_nav.png"/>
+            <property content="highContrastNav-tutorials"
+            		  value="$theme$graphics/icons/ctool/tu_nav.png"/>
+            <property content="highContrastNav-samples"
+            		  value="$theme$graphics/icons/ctool/sa_nav.png"/>
+            <property content="highContrastNav-whatsnew"
+            		  value="$theme$graphics/icons/ctool/wn_nav.png"/>
+            <property content="highContrastNav-webresources"
+            		  value="$theme$graphics/icons/ctool/wr_nav.png"/>
+            <property content="highContrastNav-migrate"
+            		  value="$theme$graphics/icons/ctool/mi_nav.png"/> 
+            <property content="highContrastNav-workbench"
+            		  value="$theme$graphics/icons/ctool/wb_nav.png"/>
+      </theme>
+      <theme
+            id="org.eclipse.ui.intro.universal.purpleMesh"
+            content="%theme.content.purpleMesh"
+            path="$nl$/themes/purpleMesh"
+            previewImage="$nl$/themes/purpleMesh/preview.png"
+            scalable="true">
+            <property content="launchbarBackground"
+            		value="#c6c3e8"/>
+            <property content="capitalizeTitles"
+            		value="true"/>
+            <property content="launchbarOverviewIcon"
+            		  value="$theme$graphics/launchbar/overview.gif"/>
+            <property content="launchbarFirststepsIcon"
+            		  value="$theme$graphics/launchbar/firststeps16.png"/>
+            <property content="launchbarTutorialsIcon"
+            		  value="$theme$graphics/launchbar/tutorials.gif"/>
+            <property content="launchbarSamplesIcon"
+            		  value="$theme$graphics/launchbar/samples.gif"/>
+            <property content="launchbarWhatsnewIcon"
+            		  value="$theme$graphics/launchbar/whatsnew.gif"/>
+            <property content="launchbarMigrateIcon"
+            		  value="$theme$graphics/launchbar/migrate16.png"/>
+            <property content="launchbarWebresourcesIcon"
+            		  value="$theme$graphics/launchbar/webresources16.png"/>
+            		  
+            <property content="highContrast-overview"
+            		  value="$theme$graphics/icons/etool/overview72.gif"/>
+            <property content="highContrast-firststeps"
+            		  value="$theme$graphics/icons/etool/firsteps72.gif"/>
+            <property content="highContrast-tutorials"
+            		  value="$theme$graphics/icons/etool/tutorials72.gif"/>
+            <property content="highContrast-samples"
+            		  value="$theme$graphics/icons/etool/samples72.gif"/>
+            <property content="highContrast-whatsnew"
+            		  value="$theme$graphics/icons/etool/whatsnew72.gif"/>
+            <property content="highContrast-webresources"
+            		  value="$theme$graphics/icons/etool/webrsrc72.gif"/>
+            <property content="highContrast-migrate"
+            		  value="$theme$graphics/icons/etool/migrate72.gif"/>
+            <property content="highContrast-workbench"
+            		  value="$theme$graphics/icons/etool/wb48.gif"/> 
+            		     
+            <property content="highContrastNav-overview"
+            		  value="$theme$graphics/icons/etool/overview48.gif"/>
+            <property content="highContrastNav-firststeps"
+            		  value="$theme$graphics/icons/etool/firsteps48.gif"/>
+            <property content="highContrastNav-tutorials"
+            		  value="$theme$graphics/icons/etool/tutorials48.gif"/>
+            <property content="highContrastNav-samples"
+            		  value="$theme$graphics/icons/etool/samples48.gif"/>
+            <property content="highContrastNav-whatsnew"
+            		  value="$theme$graphics/icons/etool/whatsnew48.gif"/>
+            <property content="highContrastNav-webresources"
+            		  value="$theme$graphics/icons/etool/webrsrc48.gif"/>
+            <property content="highContrastNav-migrate"
+            		  value="$theme$graphics/icons/etool/migrate48.gif"/> 
+            <property content="highContrastNav-workbench"
+            		  value="$theme$graphics/icons/etool/wb48.gif"/>       
+      </theme> 
+      <theme
+            default="true"
+            id="org.eclipse.ui.intro.universal.slate"
+            content="%theme.content.slate"
+            path="$nl$/themes/slate"
+            previewImage="$nl$/themes/slate/preview.png"
+            scalable="true">
+            <property content="workbenchAsRootLink"
+            		value="true"/>
+            		<!--
+            <property content="launchbarBackground"
+            		value="#a1c2cb"/>
+            		-->
+            <property content="launchbarOverviewIcon"
+            		  value="$theme$graphics/launchbar/overview16.png"/>
+            <property content="launchbarFirststepsIcon"
+            		  value="$theme$graphics/launchbar/firststeps16.png"/>
+            <property content="launchbarTutorialsIcon"
+            		  value="$theme$graphics/launchbar/tutorials16.png"/>
+            <property content="launchbarSamplesIcon"
+            		  value="$theme$graphics/launchbar/samples16.png"/>
+            <property content="launchbarWhatsnewIcon"
+            		  value="$theme$graphics/launchbar/whatsnew16.png"/>
+            <property content="launchbarMigrateIcon"
+            		  value="$theme$graphics/launchbar/migrate16.png"/>
+            <property content="launchbarWebresourcesIcon"
+            		  value="$theme$graphics/launchbar/webresources16.png"/>
+
+            <property content="highContrast-overview"
+            		  value="$theme$graphics/icons/ctool/overview.png"/>
+            <property content="highContrast-firststeps"
+            		  value="$theme$graphics/icons/ctool/firststeps.png"/>
+            <property content="highContrast-tutorials"
+            		  value="$theme$graphics/icons/ctool/tutorials.png"/>
+            <property content="highContrast-samples"
+            		  value="$theme$graphics/icons/ctool/samples.png"/>
+            <property content="highContrast-whatsnew"
+            		  value="$theme$graphics/icons/ctool/whatsnew.png"/>
+            <property content="highContrast-webresources"
+            		  value="$theme$graphics/icons/ctool/webresources.png"/>
+            <property content="highContrast-migrate"
+            		  value="$theme$graphics/icons/ctool/migrate.png"/>    
+            <property content="highContrast-workbench"
+            		  value="$theme$graphics/icons/ctool/workbench.png"/>    
+            		  
+            <property content="highContrastNav-overview"
+            		  value="$theme$graphics/icons/ctool/ov_nav.png"/>
+            <property content="highContrastNav-firststeps"
+            		  value="$theme$graphics/icons/ctool/fs_nav.png"/>
+            <property content="highContrastNav-tutorials"
+            		  value="$theme$graphics/icons/ctool/tu_nav.png"/>
+            <property content="highContrastNav-samples"
+            		  value="$theme$graphics/icons/ctool/sa_nav.png"/>
+            <property content="highContrastNav-whatsnew"
+            		  value="$theme$graphics/icons/ctool/wn_nav.png"/>
+            <property content="highContrastNav-webresources"
+            		  value="$theme$graphics/icons/ctool/wr_nav.png"/>
+            <property content="highContrastNav-migrate"
+            		  value="$theme$graphics/icons/ctool/mi_nav.png"/> 
+            <property content="highContrastNav-workbench"
+            		  value="$theme$graphics/icons/ctool/wb_nav.png"/>
+      </theme>
+      
+      <theme
+            id="org.eclipse.ui.intro.universal.solstice"
+            content="%theme.content.solstice"
+            path="$nl$/themes/solstice"
+            previewImage="$nl$/themes/solstice/preview.png"
+            scalable="true">
+            <property content="workbenchAsRootLink"
+            		value="false"/>
+            <property content="launchbarOverviewIcon"
+            		  value="$theme$graphics/launchbar/overview16.png"/>
+            <property content="launchbarFirststepsIcon"
+            		  value="$theme$graphics/launchbar/firststeps16.png"/>
+            <property content="launchbarTutorialsIcon"
+            		  value="$theme$graphics/launchbar/tutorials16.png"/>
+            <property content="launchbarSamplesIcon"
+            		  value="$theme$graphics/launchbar/samples16.png"/>
+            <property content="launchbarWhatsnewIcon"
+            		  value="$theme$graphics/launchbar/whatsnew16.png"/>
+            <property content="launchbarMigrateIcon"
+            		  value="$theme$graphics/launchbar/migrate16.png"/>
+            <property content="launchbarWebresourcesIcon"
+            		  value="$theme$graphics/launchbar/webresources16.png"/>
+
+            <property content="highContrast-overview"
+            		  value="$theme$graphics/icons/ctool/overview.png"/>
+            <property content="highContrast-firststeps"
+            		  value="$theme$graphics/icons/ctool/firststeps.png"/>
+            <property content="highContrast-tutorials"
+            		  value="$theme$graphics/icons/ctool/tutorials.png"/>
+            <property content="highContrast-samples"
+            		  value="$theme$graphics/icons/ctool/samples.png"/>
+            <property content="highContrast-whatsnew"
+            		  value="$theme$graphics/icons/ctool/whatsnew.png"/>
+            <property content="highContrast-webresources"
+            		  value="$theme$graphics/icons/ctool/webresources.png"/>
+            <property content="highContrast-migrate"
+            		  value="$theme$graphics/icons/ctool/migrate.png"/>    
+            <property content="highContrast-workbench"
+            		  value="$theme$graphics/icons/ctool/workbench.png"/>    
+            		  
+            <property content="highContrastNav-overview"
+            		  value="$theme$graphics/icons/ctool/ov_nav.png"/>
+            <property content="highContrastNav-firststeps"
+            		  value="$theme$graphics/icons/ctool/fs_nav.png"/>
+            <property content="highContrastNav-tutorials"
+            		  value="$theme$graphics/icons/ctool/tu_nav.png"/>
+            <property content="highContrastNav-samples"
+            		  value="$theme$graphics/icons/ctool/sa_nav.png"/>
+            <property content="highContrastNav-whatsnew"
+            		  value="$theme$graphics/icons/ctool/wn_nav.png"/>
+            <property content="highContrastNav-webresources"
+            		  value="$theme$graphics/icons/ctool/wr_nav.png"/>
+            <property content="highContrastNav-migrate"
+            		  value="$theme$graphics/icons/ctool/mi_nav.png"/> 
+            <property content="highContrastNav-workbench"
+            		  value="$theme$graphics/icons/ctool/wb_nav.png"/>
+      </theme>
+   </extension>
+</plugin>

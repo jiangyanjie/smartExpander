@@ -1,0 +1,31 @@
+package huyamin.main;
+
+import java.io.IOException;
+import java.io.StringReader;
+import java.util.ArrayList;
+
+import edu.stanford.nlp.ling.HasWord;
+import edu.stanford.nlp.ling.TaggedWord;
+import edu.stanford.nlp.parser.lexparser.LexicalizedParser;
+import edu.stanford.nlp.process.Tokenizer;
+import edu.stanford.nlp.trees.Tree;
+import edu.stanford.nlp.trees.TreebankLanguagePack;
+
+public class ParserDemo2 {
+	public static void main(String[] args) throws IOException {
+		String grammar = "edu/stanford/nlp/models/lexparser/englishPCFG.ser.gz";
+		String[] options = { "-maxLength", "80", "-retainTmpSubcategories" };
+		LexicalizedParser lp = LexicalizedParser.loadModel(grammar, options);
+		TreebankLanguagePack tlp = lp.getOp().langpack();
+
+		String sent2 = ("This is slightly longer and more complex sentences requiring tokenization.");
+
+		Tokenizer<? extends HasWord> toke =	tlp.getTokenizerFactory().getTokenizer(new StringReader(sent2));
+		Tree parse = lp.parse(toke.tokenize());
+		ArrayList<TaggedWord> tags = parse.taggedYield();
+		for (TaggedWord taggedWord : tags) {
+			System.out.println(taggedWord.word() + "\t" + taggedWord.tag());
+		}
+	}
+}
+

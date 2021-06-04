@@ -1,0 +1,74 @@
+package util;
+
+import java.util.ArrayList;
+
+public class Heu {
+	public static void main(String[] args) {
+		String identifierName = "startMouseCapture";
+		String comment = "Starts mouse capture.";
+		System.out.println(canHeuExpand(identifierName, comment));
+		
+		
+		String result = "Put a key code to key identifier mapping into the IDENTIFIER_KEY_CODES table.";
+		ArrayList<String> arrayList = new ArrayList<>();
+		for (String string : result.split(" ")) {
+			arrayList.addAll(Util.split(string));
+		}
+		String[] temp = new String[arrayList.size()];
+		for (int i = 0; i < arrayList.size(); i++) {
+			System.out.println(arrayList.get(i));
+		}
+		
+	}
+	public static boolean canHeuExpand(String identifierName, String comment) {
+		ArrayList<String> parts = Util.split(identifierName);
+		String[] words = parseComment(comment.toLowerCase());
+		for (String part : parts) {
+			if (!in(part, words)) {
+				return false;
+			}
+		}
+		return true;
+	}
+
+	private static boolean in(String part, String[] words) {
+		for (String word : words) {
+			if (Util.isSequence(word, part)) {
+				return true;
+			}
+			if (part.charAt(part.length()-1) == 's' && Util.isSequence(word, part.substring(0, part.length()-1))) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	private static String[] parseComment(String comment) {
+		String result = "";
+		char[] chars = comment.toCharArray();
+		
+		for (int i = 0; i < chars.length; i++) {
+			if (Util.isLetter(chars[i])) {
+				result += chars[i];
+			} else {
+				result += ' ';
+			}
+		}
+		while (result.contains("  ")) {
+			result = result.replace("  ", " ");
+		}
+		
+//		ArrayList<String> arrayList = new ArrayList<>();
+//		for (String string : result.split(" ")) {
+//			arrayList.addAll(Util.split(string));
+//		}
+//		String[] temp = new String[arrayList.size()];
+//		for (int i = 0; i < arrayList.size(); i++) {
+//			temp[i] = arrayList.get(i);
+//		}
+			
+		
+		return result.split(" ");
+	}
+}
+

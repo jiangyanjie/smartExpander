@@ -1,0 +1,24 @@
+package huyamin.main;
+
+import java.io.IOException;
+import java.util.List;
+
+import edu.mit.jwi.item.IIndexWord;
+import edu.mit.jwi.item.POS;
+import util.Config;
+
+public class HiWordnet {
+	public static void main(String[] args) throws IOException  { 
+		for (POS p1 : POS.values()) {
+			List<String> lstStem=Config.stemmer.findStems("mk", p1);
+			for (String string : lstStem) {
+				for (POS p2 : POS.values()) {
+					IIndexWord idxWord = Config.dict.getIndexWord(string, p2);
+					if (idxWord == null)
+						continue;
+					System.out.println(p1 + "\t" + string + "\t" + p2);
+				}
+			} 
+		}
+	}
+}

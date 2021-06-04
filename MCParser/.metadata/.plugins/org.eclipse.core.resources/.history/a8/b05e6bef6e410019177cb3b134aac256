@@ -1,0 +1,22 @@
+package util;
+
+import java.io.File;
+import java.io.IOException;
+
+public class Config {
+	public static String outFile = "D:/RecomMethodName/ParseResult/MethodComment.tsv";
+    public static String englishDicFile = "dic/EnglishDic.txt";
+
+	static {
+		File f=new File(Config.outFile);
+		if(f.exists()) {
+             f.delete();
+		} else {
+			try {
+				f.createNewFile();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+}

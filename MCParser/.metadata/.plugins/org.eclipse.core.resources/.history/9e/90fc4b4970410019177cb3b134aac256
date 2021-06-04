@@ -1,0 +1,20 @@
+package huyamin.main;
+
+import java.io.IOException;
+
+import edu.mit.jwi.item.IIndexWord;
+import edu.mit.jwi.item.IWord;
+import edu.mit.jwi.item.IWordID;
+import edu.mit.jwi.item.POS;
+import util.Config; 
+
+public class  HiWordnet {  
+  public static void main(String[] args) throws IOException  { 
+    IIndexWord  idxWord = Config.dict.getIndexWord("money", POS.VERB);   
+    IWordID wordID =  (IWordID)idxWord.getWordIDs().get(0);   
+    IWord word =  Config.dict.getWord(wordID);   
+    System.out.println("Id = " + wordID);    
+    System.out.println("Lemma = " + word.getLemma());   
+    System.out.println("Gloss  = " + word.getSynset().getGloss());     
+  }
+}

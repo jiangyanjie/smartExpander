@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName content="java.io.FileReader"/>
+<fullyQualifiedTypeName content="java.util.Spliterator"/>
+<fullyQualifiedTypeName content="util.Heu"/>
+<fullyQualifiedTypeName content="java.io.PrintStream"/>
+<fullyQualifiedTypeName content="java.io.File"/>
+<fullyQualifiedTypeName content="org.eclipse.jface.text.templates.Template"/>
+<fullyQualifiedTypeName content="java.lang.System"/>
+<fullyQualifiedTypeName content="edu.mit.jwi.morph.WordnetStemmer"/>
+<fullyQualifiedTypeName content="edu.stanford.nlp.ling.TaggedWord"/>
+<fullyQualifiedTypeName content="java.util.HashMap"/>
+<fullyQualifiedTypeName content="java.util.List"/>
+<fullyQualifiedTypeName content="java.util.ArrayList"/>
+<fullyQualifiedTypeName content="util.Config"/>
+<fullyQualifiedTypeName content="util.Dic"/>
+<fullyQualifiedTypeName content="java.util.HashSet"/>
+<fullyQualifiedTypeName content="util.Util"/>
+<fullyQualifiedTypeName content="edu.mit.jwi.Dictionary"/>
+<fullyQualifiedTypeName content="java.lang.String"/>
+<fullyQualifiedTypeName content="edu.stanford.nlp.trees.TreeVisitor"/>
+<fullyQualifiedTypeName content="edu.stanford.nlp.trees.Tree"/>
+<fullyQualifiedTypeName content="edu.stanford.nlp.trees.DiskTreebank"/>
+<fullyQualifiedTypeName content="edu.stanford.nlp.trees.Treebank"/>
+<fullyQualifiedTypeName content="edu.stanford.nlp.process.PTBTokenizer"/>
+<fullyQualifiedTypeName content="edu.stanford.nlp.ling.Word"/>
+<fullyQualifiedTypeName content="util.Stemmer"/>
+</qualifiedTypeNameHistroy>

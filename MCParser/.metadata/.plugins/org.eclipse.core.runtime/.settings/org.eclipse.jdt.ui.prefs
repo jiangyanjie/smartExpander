@@ -1,0 +1,21 @@
+content_assist_autoactivation_delay=200
+content_assist_autoactivation_triggers_java=abcdefghijklmnopqrstuvwxyz.
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs content\="java.lang.Appendable"><rhs content\="java.io.PrintStream"/></lhs><lhs content\="java.io.Closeable"><rhs content\="java.io.PrintStream"/></lhs><lhs content\="java.lang.AutoCloseable"><rhs content\="java.io.PrintStream"/></lhs><lhs content\="java.io.FilterOutputStream"><rhs content\="java.io.PrintStream"/></lhs><lhs content\="java.io.OutputStream"><rhs content\="java.io.PrintStream"/></lhs><lhs content\="java.io.Flushable"><rhs content\="java.io.PrintStream"/></lhs><lhs content\="java.io.PrintStream"><rhs content\="java.io.PrintStream"/></lhs><lhs content\="java.util.List"><rhs content\="java.util.ArrayList"/></lhs><lhs content\="java.util.Collection"><rhs content\="java.util.ArrayList"/><rhs content\="java.util.HashSet"/></lhs><lhs content\="java.lang.Iterable"><rhs content\="java.util.ArrayList"/><rhs content\="java.util.HashSet"/></lhs><lhs content\="java.util.RandomAccess"><rhs content\="java.util.ArrayList"/></lhs><lhs content\="java.lang.Cloneable"><rhs content\="java.util.HashMap"/><rhs content\="java.util.ArrayList"/><rhs content\="java.util.HashSet"/></lhs><lhs content\="java.util.AbstractList"><rhs content\="java.util.ArrayList"/></lhs><lhs content\="java.util.AbstractCollection"><rhs content\="java.util.ArrayList"/><rhs content\="java.util.HashSet"/></lhs><lhs content\="java.util.ArrayList"><rhs content\="java.util.ArrayList"/></lhs><lhs content\="java.lang.CharSequence"><rhs content\="java.lang.String"/></lhs><lhs content\="java.util.Map"><rhs content\="java.util.HashMap"/></lhs><lhs content\="java.util.AbstractMap"><rhs content\="java.util.HashMap"/></lhs><lhs content\="java.util.HashMap"><rhs content\="java.util.HashMap"/></lhs><lhs content\="java.util.Set"><rhs content\="java.util.HashSet"/></lhs><lhs content\="java.util.AbstractSet"><rhs content\="java.util.HashSet"/></lhs><lhs content\="java.util.HashSet"><rhs content\="java.util.HashSet"/></lhs><lhs content\="edu.stanford.nlp.ling.HasWord"><rhs content\="edu.stanford.nlp.ling.Word"/></lhs><lhs content\="edu.stanford.nlp.ling.StringLabel"><rhs content\="edu.stanford.nlp.ling.Word"/></lhs><lhs content\="edu.stanford.nlp.ling.HasOffset"><rhs content\="edu.stanford.nlp.ling.Word"/></lhs><lhs content\="edu.stanford.nlp.ling.ValueLabel"><rhs content\="edu.stanford.nlp.ling.Word"/></lhs><lhs content\="edu.stanford.nlp.ling.Label"><rhs content\="edu.stanford.nlp.ling.Word"/></lhs><lhs content\="edu.stanford.nlp.ling.Word"><rhs content\="edu.stanford.nlp.ling.Word"/></lhs></history>
+content_assist_number_of_computers=13
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
+eclipse.preferences.version=1
+fontPropagated=true
+org.eclipse.jdt.ui.editor.tab.width=
+org.eclipse.jdt.ui.formatterprofiles.version=12
+org.eclipse.jdt.ui.javadoclocations.migrated=true
+org.eclipse.jdt.ui.text.code_templates_migrated=true
+org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.text.templates_migrated=true
+org.eclipse.jface.textfont=1|Consolas|14.25|0|WINDOWS|1|-19|0|0|0|400|0|0|0|0|3|2|1|49|Consolas;
+proposalOrderMigrated=true
+spelling_locale_initialized=true
+tabWidthPropagated=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

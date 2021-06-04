@@ -1,0 +1,270 @@
+!SESSION 2019-03-07 16:12:48.265 -----------------------------------------------
+eclipse.buildId=4.6.0.I20160606-1100
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data D:\RecomMethodName\Code
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-03-07 16:16:26.372
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2019-03-07 16:16:26.372
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+!SESSION 2019-03-07 16:20:20.715 -----------------------------------------------
+eclipse.buildId=4.6.0.I20160606-1100
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-07 16:21:36.753
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\covered-class-4.0.3.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-07 16:21:36.760
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\randoop-all-4.0.3.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-07 16:21:36.765
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\replacecall-4.0.3.jar.
+!SESSION 2019-03-07 16:21:57.888 -----------------------------------------------
+eclipse.buildId=4.6.0.I20160606-1100
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data file:/D:/RecomMethodName/Code/
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-07 16:22:00.659
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\covered-class-4.0.3.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-07 16:22:00.659
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\randoop-all-4.0.3.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-07 16:22:00.659
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\replacecall-4.0.3.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-07 16:22:00.753
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\covered-class-4.0.3.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-07 16:22:00.769
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\randoop-all-4.0.3.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-07 16:22:00.769
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\replacecall-4.0.3.jar.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-03-07 16:22:04.533
+!MESSAGE Removing part descriptor with the 'com.android.ide.eclipse.editors.resources.explorer.ResourceExplorerView' id and the 'Resource Explorer' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-03-07 16:22:04.548
+!MESSAGE Removing part descriptor with the 'com.android.ide.eclipse.adt.internal.lint.LintViewPart' id and the 'Lint Warnings' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-03-07 16:22:04.548
+!MESSAGE Removing part descriptor with the 'com.android.ide.eclipse.hierarchyviewer.views.DeviceSelectorView' id and the 'Windows' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-03-07 16:22:04.564
+!MESSAGE Removing part descriptor with the 'com.android.ide.eclipse.hierarchyviewer.views.PixelPerfectView' id and the 'Pixel Perfect' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-03-07 16:22:04.564
+!MESSAGE Removing part descriptor with the 'com.android.ide.eclipse.hierarchyviewer.views.PixelPerfectLoupeView' id and the 'Pixel Perfect Loupe' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-03-07 16:22:04.564
+!MESSAGE Removing part descriptor with the 'com.android.ide.eclipse.hierarchyviewer.views.PixelPerfectTreeView' id and the 'Pixel Perfect Tree' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-03-07 16:22:04.564
+!MESSAGE Removing part descriptor with the 'com.android.ide.eclipse.hierarchyviewer.views.TreeViewView' id and the 'Tree View' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-03-07 16:22:04.580
+!MESSAGE Removing part descriptor with the 'com.android.ide.eclipse.hierarchyviewer.views.PropertyView' id and the 'View Properties' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-03-07 16:22:04.580
+!MESSAGE Removing part descriptor with the 'com.android.ide.eclipse.hierarchyviewer.views.TreeOverviewView' id and the 'Tree Overview' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-03-07 16:22:04.580
+!MESSAGE Removing part descriptor with the 'com.android.ide.eclipse.hierarchyviewer.views.LayoutView' id and the 'Layout View' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-03-07 16:22:04.595
+!MESSAGE Removing part descriptor with the 'org.eclipse.cdt.codan.internal.ui.views.ProblemDetails' id and the 'Problem Details' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-03-07 16:22:04.599
+!MESSAGE Removing part descriptor with the 'org.eclipse.cdt.debug.ui.executablesView' id and the 'Executables' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-03-07 16:22:04.599
+!MESSAGE Removing part descriptor with the 'org.eclipse.cdt.debug.ui.SignalsView' id and the 'Signals' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-03-07 16:22:04.609
+!MESSAGE Removing part descriptor with the 'org.eclipse.cdt.debug.ui.debuggerConsoleView' id and the 'Debugger Console' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-03-07 16:22:04.609
+!MESSAGE Removing part descriptor with the 'org.eclipse.cdt.dsf.gdb.ui.tracecontrol.view' id and the 'Trace Control' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-03-07 16:22:04.609
+!MESSAGE Removing part descriptor with the 'org.eclipse.cdt.dsf.gdb.ui.osresources.view' id and the 'OS Resources' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-03-07 16:22:04.609
+!MESSAGE Removing part descriptor with the 'org.eclipse.cdt.dsf.debug.ui.disassembly.view' id and the 'Disassembly' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-03-07 16:22:04.625
+!MESSAGE Removing part descriptor with the 'org.eclipse.cdt.make.ui.views.MakeView' id and the 'Build Targets' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-03-07 16:22:04.625
+!MESSAGE Removing part descriptor with the 'org.eclipse.cdt.ui.CView' id and the 'C/C++ Projects' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-03-07 16:22:04.625
+!MESSAGE Removing part descriptor with the 'org.eclipse.cdt.ui.IndexView' id and the 'C/C++ Index' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-03-07 16:22:04.625
+!MESSAGE Removing part descriptor with the 'org.eclipse.cdt.ui.includeBrowser' id and the 'Include Browser' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-03-07 16:22:04.640
+!MESSAGE Removing part descriptor with the 'org.eclipse.cdt.ui.callHierarchy' id and the 'Call Hierarchy' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.e4.ui.workbench 2 0 2019-03-07 16:22:04.640
+!MESSAGE Removing part descriptor with the 'org.eclipse.cdt.ui.typeHierarchy' id and the 'Type Hierarchy' description. Points to the invalid 'bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView' class.
+
+!ENTRY org.eclipse.ui 2 2 2019-03-07 16:44:21.883
+!MESSAGE Invalid preference category path: com.android.ide.eclipse.preferences.main (bundle: com.android.ide.eclipse.base, page: com.android.ide.eclipse.common.preferences.UsagePreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2019-03-07 16:44:21.899
+!MESSAGE Invalid preference category path: com.android.ide.eclipse.preferences.main (bundle: com.android.ide.eclipse.ddms, page: com.android.ide.eclipse.ddms.preferences.PreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2019-03-07 16:44:21.899
+!MESSAGE Invalid preference category path: com.android.ide.eclipse.preferences.main (bundle: com.android.ide.eclipse.ddms, page: com.android.ide.eclipse.ddms.preferences.LogCatPreferencePage)
+!SESSION 2019-03-07 18:04:57.233 -----------------------------------------------
+eclipse.buildId=4.6.0.I20160606-1100
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 2 2 2019-03-07 18:12:25.762
+!MESSAGE Invalid preference category path: com.android.ide.eclipse.preferences.main (bundle: com.android.ide.eclipse.base, page: com.android.ide.eclipse.common.preferences.UsagePreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2019-03-07 18:12:25.809
+!MESSAGE Invalid preference category path: com.android.ide.eclipse.preferences.main (bundle: com.android.ide.eclipse.ddms, page: com.android.ide.eclipse.ddms.preferences.PreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2019-03-07 18:12:25.809
+!MESSAGE Invalid preference category path: com.android.ide.eclipse.preferences.main (bundle: com.android.ide.eclipse.ddms, page: com.android.ide.eclipse.ddms.preferences.LogCatPreferencePage)
+
+!ENTRY org.eclipse.ui 4 4 2019-03-07 19:00:47.700
+!MESSAGE Referenced part does not exist yet: org.eclipse.ui.views.ProblemView.
+!SESSION 2019-03-08 13:24:27.430 -----------------------------------------------
+eclipse.buildId=4.6.0.I20160606-1100
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 2 2 2019-03-08 13:25:54.796
+!MESSAGE Invalid preference category path: com.android.ide.eclipse.preferences.main (bundle: com.android.ide.eclipse.base, page: com.android.ide.eclipse.common.preferences.UsagePreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2019-03-08 13:25:54.813
+!MESSAGE Invalid preference category path: com.android.ide.eclipse.preferences.main (bundle: com.android.ide.eclipse.ddms, page: com.android.ide.eclipse.ddms.preferences.PreferencePage)
+
+!ENTRY org.eclipse.ui 2 2 2019-03-08 13:25:54.817
+!MESSAGE Invalid preference category path: com.android.ide.eclipse.preferences.main (bundle: com.android.ide.eclipse.ddms, page: com.android.ide.eclipse.ddms.preferences.LogCatPreferencePage)
+!SESSION 2019-03-08 20:12:37.820 -----------------------------------------------
+eclipse.buildId=4.6.0.I20160606-1100
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-08 20:12:44.063
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\covered-class-4.0.3.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-08 20:12:44.066
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\edu.mit.jwi_2.4.0_jdk.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-08 20:12:44.069
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\ejml-0.23.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-08 20:12:44.072
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\javax.activation-api-1.2.0-sources.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-08 20:12:44.087
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\javax.json-api-1.0-sources.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-08 20:12:44.091
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\jaxb-api-2.4.0-b180830.0359-sources.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-08 20:12:44.098
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\jaxb-core-2.3.0.1-sources.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-08 20:12:44.108
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\jaxb-impl-2.4.0-b180830.0438-sources.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-08 20:12:44.118
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\joda-time-2.9-sources.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-08 20:12:44.124
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\jollyday-0.4.9-sources.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-08 20:12:44.129
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\jollyday.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-08 20:12:44.137
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\randoop-all-4.0.3.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-08 20:12:44.141
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\replacecall-4.0.3.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-08 20:12:44.148
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\stanford-corenlp-3.9.2-javadoc.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-08 20:12:44.152
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\stanford-corenlp-3.9.2-models.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-08 20:12:44.155
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\stanford-corenlp-3.9.2-sources.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-08 20:12:44.159
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\stanford-corenlp-3.9.2.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-08 20:12:44.255
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\covered-class-4.0.3.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-08 20:12:44.259
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\edu.mit.jwi_2.4.0_jdk.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-08 20:12:44.264
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\ejml-0.23.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-08 20:12:44.269
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\javax.activation-api-1.2.0-sources.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-08 20:12:44.279
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\javax.json-api-1.0-sources.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-08 20:12:44.284
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\jaxb-api-2.4.0-b180830.0359-sources.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-08 20:12:44.291
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\jaxb-core-2.3.0.1-sources.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-08 20:12:44.298
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\jaxb-impl-2.4.0-b180830.0438-sources.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-08 20:12:44.305
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\joda-time-2.9-sources.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-08 20:12:44.312
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\jollyday-0.4.9-sources.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-08 20:12:44.316
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\jollyday.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-08 20:12:44.325
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\randoop-all-4.0.3.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-08 20:12:44.331
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\replacecall-4.0.3.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-08 20:12:44.338
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\stanford-corenlp-3.9.2-javadoc.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-08 20:12:44.343
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\stanford-corenlp-3.9.2-models.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-08 20:12:44.348
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\stanford-corenlp-3.9.2-sources.jar.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2019-03-08 20:12:44.351
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\software\eclipse-SDK-4.6-win32-x86_64\eclipse\plugins\stanford-corenlp-3.9.2.jar.

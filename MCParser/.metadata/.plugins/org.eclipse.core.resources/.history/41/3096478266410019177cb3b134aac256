@@ -1,0 +1,110 @@
+package entity;
+
+import java.util.ArrayList;
+
+public class MyComment {
+	private int startLine;
+	private int endLine;
+	private String type;
+	private String content;
+	
+	public MyComment(int startLine, int endLine, String content, String type) {
+		this.startLine = startLine;
+		this.endLine = endLine;
+		this.content = content;
+		this.type = type;
+	}
+
+	@Override
+	public String toString() {
+		String result = contentToString();
+		result = result.replaceAll("\n", ". ");
+		result = result.replaceAll("\t", " ");
+		while (result.contains("  ")) {
+			result = result.replaceAll("  ", " ");
+		}
+		while (result.contains("..")) {
+			result = result.replaceAll("..", ".");
+		}
+		return result;
+	}
+	
+	
+	
+	
+	public String contentToString() {
+		if (type.equals("Javadoc")) {
+			return javadocToString(content);
+		} else if (type.equals("LineComment")) {
+			return lineCommentToString(content);
+		} else if (type.equals("BlockComment")) {
+			return blockCommentToString(content);
+		} else {
+			return null;
+		}
+	}
+	
+	private static String javadocToString(String javadoc) {
+		if (javadoc.split("\n").length > 1) {
+			return null;
+		}
+		if (isLargerOneTimeContains(javadoc.split("\n")[0], ".")) {
+			return null;
+		}
+		
+		ArrayList<String> result = new ArrayList<>();
+		String temp = removeSlashStar(javadoc.split("\n")[0]);
+		if (temp.contains("@") || temp.equals("")) {
+			return null;
+		} else {
+			result.add(temp);
+		}
+		
+		return String.join("\n", result);
+	}
+	
+	private static String lineCommentToString(String lineComment) {
+		return removeSlashStar(lineComment);
+	}
+	
+	private static String blockCommentToString(String blockComment) {
+		return javadocToString(blockComment);
+	}
+
+	private static boolean isLargerOneTimeContains(String str, String seq) {
+		return str.indexOf(seq) != str.lastIndexOf(seq);
+	}
+	
+	private static String removeSlashStar(String str) {
+		String result = "";
+		char[] chars = str.trim().toCharArray();
+		int startPosition = chars.length;
+		for (int i = 0; i < chars.length; i++) {
+			if (chars[i] == '/' || chars[i] == '*') {
+				
+			} else {
+				startPosition = i;
+				break;
+			}
+		}
+		for (int i = startPosition; i < chars.length; i++) {
+			result += chars[i];
+		}
+		return result.trim();
+	}
+	
+	public int getEndLine() {
+		return endLine;
+	}
+
+	public static void main(String[] args) {
+		String[] temps = {};
+		System.out.println(String.join("-", temps).length());
+		
+		System.out.println("3".contains("."));
+		System.out.println(isLargerOneTimeContains("1212.31231.23123", "."));
+		System.out.println("1212.31231.23123".lastIndexOf("."));
+	}
+	
+	
+}
