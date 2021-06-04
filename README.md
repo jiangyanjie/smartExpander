@@ -1,3 +1,6 @@
+Ar
+https://zenodo.org/badge/latestdoi/373793704
+
 # What smartExpander does?
 
 smartExpander is a tool for suggesting whether abbreviations are used properly, i.e., whether they should be replaced with corresponding full terms. 
