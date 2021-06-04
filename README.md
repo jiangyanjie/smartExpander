@@ -1,3 +1,7 @@
+# Archived version on archiving repository (Zenodo)
+
+https://zenodo.org/badge/latestdoi/373793704
+
 # What smartExpander does?
 
 smartExpander is a tool for suggesting whether abbreviations are used properly, i.e., whether they should be replaced with corresponding full terms. 
@@ -37,6 +41,10 @@ testDataAndCommand.csv: Testing data to replicate the evaluation in the paper
 
     Each row of the table  (except for the first row) represents a testing item (abbreviations).
     
-2.  To test an abbreviation on row `i`, copy the testing command on the last row,  execute the commond, and check the results againt the `Necess     
+2.  To test the abbreviation on the `i`th row, copy the testing command on the last row `Java Command 2 Test This Item`,  execute the commond, and check the results againt the value on row `Necessity4Expansion(Prediction)` 
+
+![image](https://user-images.githubusercontent.com/10864327/120813783-cf56f380-c580-11eb-97df-7a03a06af20e.png)
+
+     
 
      
