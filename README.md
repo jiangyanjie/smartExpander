@@ -23,15 +23,15 @@ smartExpander is a tool for suggesting whether abbreviations are used properly, 
 
       cd Path2Github\smartExpander\MCParser\out\production\MCParser
       
-      where `Path2Github` refers to the folder where smartExpander is located.  
+   where `Path2Github` refers to the folder where smartExpander is located.  
 
 ***3. Test smartExpander with a single abbreviation:***
 
      java FindCasualNames.main.smartExpander `abbr` `identifier` `contexts` `typeOfIdentifer` `expansion` `projectName`
 
-     where `abbr` is the abbreviation to be tested; `identifier` is the identifer containing the abbreviation; `contexts` is the contexts of the abbreviations (i.e., identifiers  sourrounding the abbreviations; `typeOfIdentifer` is the type of the enclosing identifier (e.g., variable name or method name);  `expansion` is the full terms of the abbreviation; `projectName` is the name of the enclosing Java project. 
+   where `abbr` is the abbreviation to be tested; `identifier` is the identifer containing the abbreviation; `contexts` is the contexts of the abbreviations (i.e., identifiers  sourrounding the abbreviations; `typeOfIdentifer` is the type of the enclosing identifier (e.g., variable name or method name);  `expansion` is the full terms of the abbreviation; `projectName` is the name of the enclosing Java project. 
   
-  As an illustrating example, you may execute the following Java common:   
+  As an illustrating example, you may execute the following Java common and receive the output  "`True`":   
       
       java FindCasualNames.main.smartExpander nf nf file#jsmooth#model#persistency#make#path#relative#if#possible#root variableName new file davmail
   
