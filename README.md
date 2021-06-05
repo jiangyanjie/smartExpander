@@ -4,13 +4,13 @@ https://zenodo.org/badge/latestdoi/373793704
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4899710.svg)](https://doi.org/10.5281/zenodo.4899710)
 
-# What smartExpander does?
+# What is smartExpander?
 
 smartExpander is a tool for suggesting whether abbreviations are used properly, i.e., whether they should be replaced with corresponding full terms. 
 
 # What is included by this Github repository? 
 
-***/MCParser***: The Java implementing of smartExpander.
+***/MCParser***: The Java implementation of smartExpander.
 
 ***testDataAndCommand.csv***: Testing data to replicate the evaluation in the paper
 
