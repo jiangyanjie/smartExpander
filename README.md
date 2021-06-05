@@ -10,20 +10,20 @@ smartExpander is a tool for suggesting whether abbreviations are used properly, 
 
 # How to get started? 
 
-/MCParser: The Java implementing of smartExpander.
+***/MCParser***: The Java implementing of smartExpander.
 
-testDataAndCommand.csv: Testing data to replicate the evaluation in the paper
+***testDataAndCommand.csv***: Testing data to replicate the evaluation in the paper
 
 # How to use smartExpander? (as a reusable tool)
-1. Download the implementation and testing data:
+***1. Download the implementation and testing data:***
 
     git clone git@github.com:jiangyanjie/smartExpander.git
   
-2. Switch to the folder where *.class files are:
+ ***2. Switch to the folder where *.class files are:***
 
      For example, “cd smartExpander\MCParser\out\production\MCParser”
 
-3. Test smartExpander with a single abbreviation:
+***3. Test smartExpander with a single abbreviation:***
 
    java FindCasualNames.main.smartExpander `abbr` `identifier` `contexts` `typeOfIdentifer` `expansion` `projectName`
 
@@ -31,7 +31,7 @@ testDataAndCommand.csv: Testing data to replicate the evaluation in the paper
   
   An illustrating example:   java FindCasualNames.main.smartExpander nf nf file#jsmooth#model#persistency#make#path#relative#if#possible#root variableName new file davmail
   
- 4. Expected Output for the execution: 
+ ***4. Expected Output for the execution:***
 
      “True”: if the abbreviation should be expanded
 
@@ -39,11 +39,11 @@ testDataAndCommand.csv: Testing data to replicate the evaluation in the paper
      
 # How to replicate the evaluation?
 
-1. Open testDataAndCommand.csv
+***1. Open testDataAndCommand.csv***
 
     Each row of the table  (except for the first row) represents a testing item (abbreviations).
     
-2.  To test the abbreviation on the `i`th row, copy the testing command on the last row `Java Command 2 Test This Item`,  execute the commond, and check the results againt the value on row `Necessity4Expansion(Prediction)` 
+***2.  To test the abbreviation on the `i`th row, copy the testing command on the last row `Java Command 2 Test This Item`,  execute the commond, and check the results againt the value on row `Necessity4Expansion(Prediction)`***
 
 ![image](https://user-images.githubusercontent.com/10864327/120813783-cf56f380-c580-11eb-97df-7a03a06af20e.png)
 
