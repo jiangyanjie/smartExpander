@@ -19,7 +19,7 @@ smartExpander is a tool for suggesting whether abbreviations are used properly, 
 
     git clone git@github.com:jiangyanjie/smartExpander.git
   
- ***2. Switch to the folder where *.class files are:***
+ **2. Switch to the folder where *.class files are:***
 
      For example, “cd smartExpander\MCParser\out\production\MCParser”
 
