@@ -31,7 +31,9 @@ smartExpander is a tool for suggesting whether abbreviations are used properly, 
 
      where `abbr` is the abbreviation to be tested; `identifier` is the identifer containing the abbreviation; `contexts` is the contexts of the abbreviations (i.e., identifiers  sourrounding the abbreviations; `typeOfIdentifer` is the type of the enclosing identifier (e.g., variable name or method name);  `expansion` is the full terms of the abbreviation; `projectName` is the name of the enclosing Java project. 
   
-  An illustrating example:   java FindCasualNames.main.smartExpander nf nf file#jsmooth#model#persistency#make#path#relative#if#possible#root variableName new file davmail
+  As an illustrating example, you may execute the following Java common:   
+      
+      java FindCasualNames.main.smartExpander nf nf file#jsmooth#model#persistency#make#path#relative#if#possible#root variableName new file davmail
   
  ***4. Expected Output for the execution:***
 
