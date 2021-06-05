@@ -2,6 +2,8 @@
 
 https://zenodo.org/badge/latestdoi/373793704
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4899710.svg)](https://doi.org/10.5281/zenodo.4899710)
+
 # What smartExpander does?
 
 smartExpander is a tool for suggesting whether abbreviations are used properly, i.e., whether they should be replaced with corresponding full terms. 
