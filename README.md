@@ -45,7 +45,7 @@ smartExpander is a tool for suggesting whether abbreviations are used properly, 
 
     Each row of the table  (except for the first row) represents a testing item (abbreviations).
     
-***2.  To test the abbreviation on the `i`th row, copy the testing command on the last row "`Java Command 2 Test This Item`",  execute the commond, and check the results againt the value on row "`Necessity4Expansion(Prediction)`"***
+***2.  To test the abbreviation on the `i`th row, copy the testing command on the last row "`Java Command 2 Test This Item`",  execute the commond (refer to the section "How to use smartExpander? (as a reusable tool)"), and check the results against the value on row "`Necessity4Expansion(Prediction)`"***
 
 ![image](https://user-images.githubusercontent.com/10864327/120813783-cf56f380-c580-11eb-97df-7a03a06af20e.png)
 
